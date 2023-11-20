@@ -39,6 +39,8 @@ p {
 }
 .header {
     border-bottom: 1px solid #e7e9fc;  
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
+
   
 }
 
@@ -76,6 +78,7 @@ p {
     font-weight: 500;
     padding: 24px 0; 
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -117,6 +120,7 @@ background-color: #404BBF;
 }
 .address-contact {
     color: #434455;
+    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
        
 }
 .address-contact:hover {
@@ -125,7 +129,7 @@ background-color: #404BBF;
  .address-contact:focus {
     color: #404BBF;
  }
-/* hero section section first*/
+/*============================ hero section section first=======================*/
 .hero-section {
    
     padding: 188px 0;
@@ -136,6 +140,9 @@ background-color: #404BBF;
     rgba(46, 47, 66, 0.7)),
     url(../images/People_office.jpg);
     background-size: cover;
+    /* max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center; */
     
 }
 
@@ -171,6 +178,7 @@ background-color: #404BBF;
     height: 56px;
     border: none;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
@@ -179,7 +187,7 @@ background-color: #404BBF;
     background-color: #404BBF;
 }
 
-/* section second */
+/* ==============================section second ==================================*/
 .specifics {
     color: #2E2F42;
     
@@ -206,6 +214,16 @@ background-color: #404BBF;
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  .specifics-icons {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 112px; 
+    background-color: #f4f4fd; 
+    border-radius: 4px;
+    margin-bottom: 8px;
+    
+  }
 .specifics-menu {
     display: flex; 
     gap: 24px;
@@ -224,7 +242,7 @@ background-color: #404BBF;
     letter-spacing: 0.02em;
     
 }
-/* section third */
+/* ===================================section third ===================================*/
 
 .our-team {
     background-color: #F4F4FD; 
@@ -251,6 +269,8 @@ background-color: #404BBF;
     background-color: #FFF;
     width: calc((100% - 72px)/4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+
 }
 .our-team-person-container {
     padding: 32px 0;
@@ -271,14 +291,35 @@ background-color: #404BBF;
     text-align: center;
 
 }
-.social-links {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #4D5AE5;
-    
+.menu-social-icons {
+    display: flex;  
+    justify-content: center;
+    gap: 24px; 
 
 }
+.list-social-icons {
+    width: 40px;
+    height: 40px;
+    
+}
+.social-links {   
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;    
+
+}
+.social-links:hover,
+.social-links:focus {
+    background-color: #404bbf;
+}
+.social-links-icons {
+    fill:  #f4f4fd;
+}
+
 .container-social-links  {
     justify-content: center;
     gap: 24px;
@@ -294,6 +335,7 @@ background-color: #404BBF;
     display: flex;
     align-items: center; 
     justify-content: center;
+    background-color: #F4F4FD;
     
 }
 /* section fourth */
