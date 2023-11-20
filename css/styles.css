@@ -143,6 +143,7 @@ background-color: #404BBF;
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0 auto;
     
 }
 
@@ -292,9 +293,13 @@ background-color: #404BBF;
 
 }
 .menu-social-icons {
-    display: flex;  
+   
     justify-content: center;
-    gap: 24px; 
+    gap: 24px;
+    margin-bottom: 32px;
+    margin-top: 8px;
+    display: flex;  
+    align-items: center;      
 
 }
 .list-social-icons {
@@ -442,7 +447,7 @@ background-color: #404BBF;
     align-items: flex-start;
 }
 
-.social-links-footer: {
+.social-links-footer {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links-footer:hover,
