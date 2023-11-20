@@ -271,7 +271,31 @@ background-color: #404BBF;
     text-align: center;
 
 }
+.social-links {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    
 
+}
+.container-social-links  {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    margin-top: 8px;
+    display: flex;  
+    align-items: center;    
+   
+
+}
+
+.socisl-links-icons {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+}
 /* section fourth */
 .our-portfolio {
     color: #2E2F42;
@@ -324,6 +348,8 @@ background-color: #404BBF;
 .footer {
     background-color: #2E2F42;
     padding: 100px 0;
+    display: flex;
+
 }
 .logo-web {
     color: #4D5AE5;
@@ -342,4 +368,16 @@ background-color: #404BBF;
 .footer-text {
     color: #F4F4FD;
     max-width: 264px;
+}
+.footer-container-social-links:first-child {
+    flex-direction: row;
+
+}
+.social-media {
+    color: #FFF;
+}
+.footer-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
